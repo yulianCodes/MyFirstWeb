@@ -2,8 +2,70 @@
 <html>
 <head>
     <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
+    <table style="width: 400px;">
+        <thead>
+            <tr>
+                <th>producto</th>
+                <th>precio</th>
+            </tr>
+            <tr>
+        </thead>
+           <tbody>
+            <td>hola hitokiri</td>
+            <td>gratis</td>
+        </tr>
+        <tr>
+            <td>vacuna</td>
+            <td>29.90$</td>
+        </tr>
+           </tbody>
+           <tfoot>
+               <td></td>
+               <td>total:29.90$</td>
+           </tfoot>
+
+    </table>
+        <!--ul es lista no ordenada-->
+        <ul>
+            <li>elemento 1</li>
+            <li>elemento 2</li>
+            <li>elemento 3</li>
+            <li>elemento 4</li>
+        </ul>
+        <!--ol es lista ordenada-->
+        <ol>
+            <li value="50">elemento 1</li>
+            <li>elemento 2</li>
+            <li>elemento 3</li>
+            <li>elemento 4</li>
+            <li>
+                <ol>
+                    <li style="list-style: lower-roman;">sub elemento 1</li>
+                    <li style="list-style: lower-roman;">sub elemento 2</li>
+                    <li style="list-style: lower-roman;">sub elemento 3</li>
+                </ol>
+        </ol>
+    <form action="/formulario.php" method="GET"> 
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="20" id="Comentario" placeholder="ingrese comentario">este es un valor por defecto</textarea>
+        <br>
+        <button type="button">tipo boton</button>
+        <button type="reset">tipo reset</button>
+        <button type="submit"> tipo submit</button> 
+    </form>
    <h1>Mi primer heading</h1>
    <h2>Mi segundo heading</h2>
    <h3>Mi tercer heading</h3>
@@ -14,11 +76,14 @@
    <hr>
    <h2>Mucha cerveza</h2>
    <p>
-        este texto <span style="color:blue">es muy largo para mostrar en pantalla</p>
-            
-        <br>es para mostrar span!</br>
-        <!--Este texto es un comentario del programador-->
-        <a target="_blank" href="http://www.google.com.co">Ir a google</a>
-        
+        este texto <span style="color:blue">es muy largo para mostrar en pantalla</p>     
+        <br>es para mostrar <br><br>
+        laetiqueta de span!
+   <p/>
+   <!--Este texto es un comentario del programador-->
+   <a target="_blank" href="http://www.google.com.co">Ir a google</a>
+   <img src="img/coffee.png" height="300" width="300"/>
 </body>
+
+
 </html>
